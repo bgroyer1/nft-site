@@ -88,7 +88,7 @@ a:active {
 header,
 section,
 footer {
-  padding: 46px 0;
+  padding: 2.875em 0;
 }
 
 header,
@@ -109,7 +109,7 @@ header,
 .main-image {
   width: 100%;
   max-width: 85%;
-  margin: 0 auto 32px;
+  margin: 0 auto 2em;
   display: block;
 }
 
