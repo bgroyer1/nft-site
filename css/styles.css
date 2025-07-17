@@ -22,7 +22,8 @@ h2 {
   margin-top: 0;
 }
 
-h3, .subheading {
+h3,
+.subheading {
   font-size: 1.25rem;
 }
 
@@ -114,15 +115,27 @@ header,
 
 .section-two-image-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .feature-image {
-  width: 49%;
   border-radius: 4.6px;
 }
 
 footer {
   text-align: center;
   color: #5f29a3;
+}
+
+/* ----- MEDIA QUERY ----- */
+
+@media (min-width: 480px) {
+  .section-two-image-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature-image {
+    width: 49%;
+  }
 }
