@@ -101,6 +101,10 @@ header,
   background-color: #5f29a3;
 }
 
+header {
+  text-align: center;
+}
+
 .section-two {
   color: whitesmoke;
 }
@@ -133,7 +137,27 @@ footer {
   color: #5f29a3;
 }
 
-/* ----- MEDIA QUERY ----- */
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.75em 0;
+} 
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px dotted #a190b6;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
 
 @media (min-width: 480px) {
   .section-two-image-container {
@@ -174,4 +198,5 @@ footer {
   p {
     font-size: 1.125rem;
   }
+
 }
