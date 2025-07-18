@@ -56,7 +56,7 @@ a:active {
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 0.5em 1em;
   margin: 0 0.5em 0.5em 0;
   border-radius: 4.6px;
@@ -88,7 +88,7 @@ a:active {
 header,
 section,
 footer {
-  padding: 2.875em 0;
+  padding: 1.5em 0;
 }
 
 header,
@@ -116,6 +116,7 @@ header,
 .section-two-image-container {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 .feature-image {
@@ -137,5 +138,17 @@ footer {
 
   .feature-image {
     width: 49%;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  section,
+  footer {
+    padding: 2.875em 0;
+  }
+
+  .btn {
+    display: inline-block;
   }
 }
